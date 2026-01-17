@@ -113,3 +113,34 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/api/roles/3
+
+
+### โจทย์ mid term vehicle
+GET http://localhost:3000/vehicles
+
+###
+GET http://localhost:3000/vehicles/V001
+
+###
+POST http://localhost:3000/vehicles
+Content-Type: application/json
+
+{
+    "VehicleID": "V003",
+    "PlateNumber": "3กข-789",
+    "Model": "Mazda 3",
+    "Year": 2023,
+    "Color": "Red"
+}
+
+###
+PUT http://localhost:3000/vehicles/V001
+Content-Type: application/json
+
+{
+    "Color": "Blue",
+    "Model": "Toyota Camry Hybrid"
+}
+
+###
+DELETE http://localhost:3000/vehicles/V002
